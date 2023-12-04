@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hallo ayy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<button onclick="showPopup()" class="button1">pencet ayy</button>
+
+<div id="popup1" class="popup">
+    <p>halo sayangku cintakuuuu</p>
+    <button onclick="nextPopup()">pencet lagii ayy</button>
+</div>
+
+<script>
+    function showPopup() {
+        document.getElementById('popup1').style.display = 'block';
+    }
+
+    function nextPopup() {
+        document.getElementById('popup1').style.display = 'none';
+        window.location.href = 'momen.html';
+    }
+</script>
+
+</body>
+</html>
