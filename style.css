@@ -54,8 +54,7 @@ h2 {
     display: none;
 }
 .atas {
-    text-align: justify;
-    max-width: 500px;
+    max-width: 90%;
     padding-left: 25px;
 }
 .atas img {
