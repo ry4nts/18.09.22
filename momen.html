@@ -15,7 +15,7 @@
         <div class="flex">
             <div class="card">
                 <h2>240922 Indomaret</h2>
-                <img src="assets/1.jpg" alt="1">
+                <img src="assets/1.jpeg" alt="1">
                 <p>pertama ketemu yeyy😍😍. first date di Indomaret hwa. kata ay kesan pertama ketemunya jelek, sedi banget😥😥. tapi aku seneng banget bisa ketemu ay eheh. love u sayang❤❤❤</p>
                 <div class="drive"><a href="https://drive.google.com/drive/folders/1Lrvl2wuDy-XZFbLbCH330EyWFNd40cH2">dokumentasi</a></div>
             </div>
@@ -39,19 +39,19 @@
             </div>
             <div class="card">
                 <h2>221122 Suramadu</h2>
-                <img src="assets/5.jpg" alt="5">
+                <img src="assets/5.jpeg" alt="5">
                 <p>bawah jembatan😭. liatin laut, bagusss. pertama kali aku mam lontong kupang. enak bgt mamnya ama ay😾😾, cuma rada mahal😭</p>
                 <div class="drive"><a href="https://drive.google.com/drive/folders/1L6QuJtY5xT373zibU4cTFXtxnOUjweOV?usp=sharing">dokumentasi</a></div>
             </div>
             <div class="card">
                 <h2>100123 Kaza</h2>
-                <img src="assets/6.jpg" alt="6">
+                <img src="assets/6.jpeg" alt="6">
                 <p>nonton lagiii, ini aku pas libur hwa, otw dari rumah buat ay😾. berangkat pagi pulang abis maghrib😭</p>
                 <div class="drive"><a href="https://drive.google.com/drive/folders/1IIJd1XqjKgvMYcZsQNZ-_jrj06i7pfEk?usp=drive_link">dokumentasi</a></div>
             </div>
             <div class="card">
                 <h2>070223 Alfa ama Gacoan</h2>
-                <img src="assets/7.jpg" alt="7">
+                <img src="assets/7.jpeg" alt="7">
                 <p>pertama ketemu di alfa, ay pinjem laptop soalnya laptop ay rusak😾😾, bentar doang hwa😭 soalnya ay mo ujian. terus besoknya ketemu lagi di gacoan ay balikin laptop🤩🤩</p>
                 <div class="drive"><a href="https://drive.google.com/file/d/1NFHUJpU_QaUPdk683o42Slpj7IFBtU2q/view?usp=sharing">dokumentasi</a></div>
             </div>
@@ -104,5 +104,34 @@
                 <div class="drive"><a href="https://drive.google.com/drive/folders/1-Eqh_hX07RmSGRenI5TNb3E0XgtfV-Z3">dokumentasi</a></div>
             </div>
         </div>
+
+        <button onclick="mulaiHujan()">pencettt</button>
+        <div class="container"></div>
+
+        <script>
+            function mulaiHujan() {
+            const container = document.querySelector('.container');
+            const jumlahTitik = 200;
+            
+            for (let i = 0; i < jumlahTitik; i++) {
+                const p = document.createElement('p');
+                p.textContent = '❤';
+                container.appendChild(p);
+                
+                const posisiAwalX = Math.random() * 100;
+                const posisiAwalY = Math.random() * 100 - 150;
+                const durasiAnimasi = Math.random() * 3 + 2;
+
+                p.style.left = posisiAwalX + 'vw';
+                p.style.top = posisiAwalY + 'vh';
+                p.style.animationDuration = durasiAnimasi + 's';
+            }
+            setTimeout(() => {
+                const elemenP = document.querySelectorAll('.container p');
+                elemenP.forEach(elem => elem.remove());
+            }, 15000);
+            }
+        </script>
+
     </body>
 </html>
