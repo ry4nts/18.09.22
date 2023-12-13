@@ -96,6 +96,7 @@ button {
 
 .pgede {
     font-size: 75px;
+    text-align: center;
 }
   
 .container {
@@ -109,7 +110,7 @@ button {
 .container p {
     position: absolute;
     left: 0;
-    animation: hujan linear 1s infinite;
+    animation: hujan linear 3s infinite;
 }
   
 @keyframes hujan {
@@ -122,4 +123,3 @@ button {
       opacity: 1;
     }
 }
-  
