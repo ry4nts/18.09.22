@@ -93,6 +93,10 @@ button {
     height: 100%;
     z-index: -1;
 }
+
+.pgede {
+    font-size: 75px;
+}
   
 .container {
     position: absolute;
@@ -114,7 +118,7 @@ button {
       opacity: 0;
     }
     to {
-      transform: translateY(60vh);
+      transform: translateY(100vh);
       opacity: 1;
     }
 }
