@@ -1,124 +1,129 @@
+/* General Styles */
 body {
-    background-color: rgb(251, 155, 171);
-    font-family: Arial, Helvetica, sans-serif;
-}
-h2 {
-    padding-left: 25px;
-}
-.card {
-    border : none;
-    padding: 5px;
-    border-radius : 5px;
-    margin-bottom : 5px;
-    background-color: pink;
-    text-align: justify;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;    
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 0px 10px 0px black;
-    z-index: 10;
-}
-.card img{
-    width: 300px;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 1px;
-}
-.card p{
-    min-width: 400px;
-    max-width: 400px;
-}
-.drive {
-    width: 400px;
-    height: auto;
-    border-radius: 5px;
-    background-color: rgb(251, 155, 171);
-    text-align: center;
-    transition: all 0.3s;
-}
-.drive a{
-    text-decoration: none;
-    color: black;
-}
-.drive :hover{
-    color: blue;
-}
-.flex {
-    display: flex;
-    overflow: scroll;
-    gap: 25px;
-    padding: 25px;
-    z-index: 10;
-}
-::-webkit-scrollbar{
-    display: none;
-}
-.atas {
-    max-width: 90%;
-    padding-left: 25px;
-}
-.atas img {
-    width: 300px;
-    border-radius: 5px;
+    background-color: #ffdbe5;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
+/* Card Styling */
+.card {
+    background-color: #ffc6d1;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+h1 {
+    padding-left: 7px;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    max-width: 100%;
+    font-size: 16px;
+}
+
+/* Flexbox for cards */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Drive button */
+.drive a {
+    background-color: #f875aa;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.drive a:hover {
+    background-color: #ff4175;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #ffc6d1;
+    padding: 15px 0;
+}
+
+.containernav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #f875aa;
+}
+
+/* Popup styling */
 .popup {
     display: none;
     position: fixed;
-    min-width: 80%;
-    max-width: 90%;
-    font-size: xx-large;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: rgb(251, 155, 171);
-    border: none;
-    z-index: 99;
+    padding: 30px;
+    background-color: #ffebf1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
     text-align: center;
-    font-size: 75px;
 }
 
+/* Button styles */
 button {
+    background-color: #f875aa;
     border: none;
     border-radius: 5px;
-    background-color: rgb(251, 155, 171);
-    font-size: 50px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.button1 {
-    position: fixed;
-    font-size: 100px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+button:hover {
+    background-color: #ff4175;
 }
-
-.container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-  
-.container p {
-    position: absolute;
-    left: 0;
-    font-size: 50px;
-    animation: hujan linear 3s infinite;
-}
-  
-@keyframes hujan {
-    from {
-      transform: translateY(0vh);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(100vh);
-      opacity: 1;
-    }
-}
-  
