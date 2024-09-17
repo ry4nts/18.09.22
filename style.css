@@ -5,6 +5,9 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Card Styling */
@@ -23,9 +26,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-h1 {
-    padding-left: 7px;
-}
 .card:hover {
     transform: scale(1.05);
 }
@@ -66,21 +66,22 @@ h1 {
 }
 
 /* Navbar styling */
+/* Navbar styling */
 .navbar {
-    background-color: #ffc6d1;
-    padding: 15px 0;
+    background-color: none;
+    width: 100%;
 }
 
 .containernav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Pusatkan konten */
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
+    width: 80%; /* Atur lebar agar responsif */
+    padding: 20px;
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
     gap: 20px;
 }
@@ -96,6 +97,7 @@ h1 {
 .nav-links li a:hover {
     color: #f875aa;
 }
+
 
 /* Popup styling */
 .popup {
